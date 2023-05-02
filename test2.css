@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Preahvihear&family=Roboto&family=Satisfy&family=Space+Mono&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,52 +8,58 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: white;
+  background-color: #e7d1b1;
 }
 .menuoption a{
-    color: whitesmoke;
+    color: #e7d1b1;
     text-decoration: none;
     font-size: 2rem;
-    padding:1.5rem;
+    padding:1rem;
     margin:0.8rem;
-    background-color: #ACC8E5;
+    background-color: #112A46;
     margin-top:1.5rem;
-   
 }
 .menuoption a:hover,.menuoption a:focus{
-    text-decoration: underline #112A46  0.75rem ;
-    background:#ACC8E5 ;
-    border-radius: 1.5rem;
+    text-decoration: underline #e7d1b1 0.5rem ;
+    background:#112A46;
+    border-radius: 1rem;
     padding: 1rem;
-    color: aliceblue;
-    transition: 0.75s;
+    color: #e7d1b1;
+    transition: 1s;
     margin-top: 0.8rem;
 }
 .menuoption{
     text-align: center;
     display:inline-block;
+    margin-top: 2rem;
 }
 .company-name{
-    color:#ACC8E5;
-    font-family:'Times New Roman', Times, serif;
+    color:#e7d1b1;
+    font-family: 'Space Mono', monospace;
     text-align: center;
-    margin-top: 100px;
-    font-size: 3rem;
+    margin: 125px 10vw;
+    font-size: 5rem;
     text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #18375c;
 }
 .company-name:hover,.company-name:focus{
-    color:#112A46;
-    background-color: #ACC8E5;
-    border-radius: 25px;
-    border:5px double #112A46;
-    transition: 0.65s;
+    background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0) );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 1s;
+    border-radius: 1rem;
+    box-shadow: 1rem 2rem 4rem #ACC8E5;
+    color: #112A46;
+   
 }
 .space1{
     height: 10px;
-    width: 25px;
+    width: 25%;
     background-color: #112A46;
     margin:20px auto;
     border-radius: 25px;
+    margin-top: 50px;
 }
 .about{
     color: #112A46;
@@ -67,27 +74,60 @@ body{
     text-decoration: underline 1rem #112A46;
     transition: 0.75s;
 }
+.img-1{
+    background-size: auto;
+    margin-bottom: 0px;
+}
+@keyframes example{
+    0%{
+       transform: translateX(0);
+    }
+    50%{
+        transform: translateX(68vw);
+    }
+    100%{
+       transform: translateX(0);
+    }
+}
+.move{
+    width: 15vw;
+    height: 20vh;
+    animation: example 10s linear infinite;
+    padding-bottom: 0;
+}
+.move-pic{
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+}
+
 .p1{
     text-decoration: transparent;
     font-size: 1.5rem;
-    background:linear-gradient(to left,#18375c,#ACC8E5 );
+    background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0) );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     line-height: 3rem;
     text-align: center;
     color: black;
     padding: 2rem;
     text-transform: capitalize;
-    margin: 10px auto;
+    margin: auto 5vw;
+    border-radius: 1.5rem;
+    box-shadow: 1rem 2rem 4rem #ACC8E5;
+    
 }
 .p1:hover{
-    border: 5px solid #112A46;
-    transition: 0.75s;
+    transform: translateY(-2.5rem);
+    box-shadow: 1rem 2rem 5.5rem #ACC8E5;
+    transition: 3s;
 }
 .feature{
     color: #112A46;
     font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    min-height: 50vh;
+    margin-bottom: 3rem;
     margin-top: 50px;
 }
 .feature:hover{
@@ -145,7 +185,7 @@ body{
 .contact-detail,.branch,.direction,.enquiry{
     text-align: center;
     color:#112A46;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 .contact-detail li a{
     cursor: pointer;
@@ -155,6 +195,7 @@ body{
     color: #112A46;
     border-radius: 12px;
     transition: 0.75s;
+    font-size: 1.5rem;
 }
 .space5{
     height: 10px;
@@ -171,17 +212,23 @@ body{
 .iframe{
     text-align: center;
    border: 5px solid #112A46;
-   margin: 5rem 1.5rem;
+   margin: 5rem 9vw;
    background-color: #ACC8E5;
+   height: 50vh;
+   object-fit: cover;
+   box-shadow: 1rem 1rem 5rem #ACC8E5;
+   
 }
-iframe{
+.map{
     align-self: auto;
-    width: fit-content;
-
+    object-fit: cover;
+    height: 48.5vh;
+    width: 80vw;
+   
 }
 .enquiry{
-    margin-top:3rem;
-    margin-bottom: 2rem;
+    margin-top:2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 input{
@@ -189,6 +236,8 @@ input{
     color: #112A46;
     text-align: center;
     margin:1rem auto;
+    border-radius: 0.5rem;
+    
 }
 label{
     font-size: 1.5rem;
@@ -198,11 +247,19 @@ label{
     font-weight: 700;
 }
 .inputdiv{
-    height: auto;
     white-space: nowrap;
+    border: 2px solid #e7d1b1;
+    margin: 90px 10vw;
+    box-shadow: 1rem 2rem 2.5rem ;
+    border-radius: 1.5rem ;
+}
+.inputdiv:hover{
+   transform: translateY(-20px);
+   transition: 1s;
 }
 form{
     text-align: center;
+    color: #18375c;
 }
 #myBtn {
     display: none;
@@ -214,14 +271,15 @@ form{
     border: none;
     outline: none;
     background-color: #18375c;
-    color: white;
+    color: #e7d1b1;
     cursor: pointer;
     padding: 15px;
     border-radius: 50%;
   }
   #myBtn:hover {
-    background-color: white;
+    background-color: #e7d1b1;
     color: #112A46;
+    border: 1px #18375c;
 }
 #myBtn.show {
     display: block;
@@ -263,11 +321,28 @@ form{
   .company-name{
     font-size: 2rem;
   }
+  .move{
+    width: 30vw;
+    height: 15vh;
+    animation: example 7s linear infinite;
+    padding-bottom: 0px;
+}
+.company-name:hover,.company-name:focus{
+    background:none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter:none;
+    transition: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: none;
+    background-color: #112A46;
+    color: #e7d1b1;
 }
 #nav-menu-btn:hover,#nav-menu-btn:focus{
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 15px;
+}
 }
 @media screen and (min-width: 770px) {
     .menu{
@@ -289,4 +364,55 @@ form{
 }
 .adv a:hover{
     text-decoration: underline;
+}
+.giphy-embed{
+   display: block;
+   margin: auto;
+}
+.gif{
+   background-color: #e7d1b1;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width:75vw;
+    height: 60vh;
+    background-color: #ACC8E5;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 3rem rgb(0, 0, 0);
+    overflow-y: scroll;
+}
+.container form{
+    padding: 0.5rem;
+    width: 100%;
+    border:2px solid #18375c;
+    border-radius: 2rem 2rem 0 0 ;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+input{
+    font-size: 1.4rem;
+    text-align: left;
+}
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+}
+.product img{
+    width:70px ;
+    height: 70px;
+    object-fit: cover ;
+}
+.product .p-detail h2{
+    color:#18375c;
+    font-size: 1.5rem;
+    padding-left: 1rem;
 }
